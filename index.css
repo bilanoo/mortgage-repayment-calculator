@@ -1,0 +1,54 @@
+:root {
+  --dark-grey: hsl(200, 26%, 54%);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  font-family: "Plus Jakarta Sans", serif;
+  display: block;
+}
+
+.calculator-container {
+  margin-left: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.main-heading-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-heading-container p {
+  font-weight: 500;
+  color: var(--dark-grey);
+  margin-top: 0;
+  width: fit-content;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 37.5rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-heading-container {
+    align-items: center;
+    flex-direction: row;
+    h1 {
+    }
+
+    p {
+      margin: auto 1.563rem auto auto;
+    }
+  }
+}
+
+.heading-content {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+  margin-top: 0;
+}
